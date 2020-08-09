@@ -3,8 +3,8 @@
     <form @submit.prevent="addTodo">
       <input
         type="text"
-        name="title"
         v-model="title"
+        name="title"
         placeholder="Add Todo..."
       />
       <input type="submit" value="Submit" class="btn" />
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import uuidv4 from "uuid";
+// import uuid from 'uuid';
 export default {
   name: "AddTodo",
   data() {
@@ -24,10 +24,10 @@ export default {
   methods: {
     addTodo() {
       const newTodo = {
-        id: uuidv4(),
         title: this.title,
         completed: false,
       };
+      // Send up to parent
       this.$emit("add-todo", newTodo);
       this.title = "";
     },
@@ -39,7 +39,6 @@ export default {
 form {
   display: flex;
 }
-
 input[type="text"] {
   flex: 10;
   padding: 5px;
