@@ -1,4 +1,6 @@
-# test
+# Todo Application Vue
+
+Learned making basic CRUD in VUE UI Framework , Learned from (Traversity Media)[https://www.youtube.com/watch?v=Wy9q22isx3U] Crash Course 
 
 ## Project setup
 ```
